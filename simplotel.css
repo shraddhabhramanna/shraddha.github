@@ -1,0 +1,269 @@
+/* Style the body */
+body {
+
+    background: linear-gradient(to right, #fff7b3, #e1a7ba, #edb0f3);/* Red background for the entire page */
+    background-size: cover; /* Ensure gradient covers the entire width */
+    
+    color:red; /* Dark red text color */
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color:#f4726f; /* Slightly lighter black for the nav bar */
+    padding: 10px 0; /* Padding for top and bottom */
+}
+
+/* Remove default list styles and spacing */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style each list item */
+nav ul li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+/* Remove margin from the last item */
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Style the links */
+nav ul li a {
+    color:black; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around the text */
+    display: inline-block; /* Make padding work */
+    font-size: 18px; /* Font size */
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+/* Change background color on hover */
+nav ul li a:hover {
+    background-color: #333; /* Dark gray background color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+}
+.container-img img {
+    height: 41rem;
+    width: 47rem;
+    object-fit: cover;
+}
+.left-side {
+    
+    width: 48%; /* Adjust as needed */
+    text-align: left;
+    /* background-color: pink; */
+    padding: 20px;
+    border-radius: 8px;
+  
+}
+h1{
+    color: black;
+}
+p{
+    color: black;
+}
+
+
+.left-side {
+    padding: 100px;
+    text-align: left; /* Align text to the left */
+}
+
+.left-side h1 {
+    text-align: left;
+    letter-spacing: 10px;
+    color: #222; /* Darker color for the heading */
+    font-size: 54px; /* Font size for readability */
+    margin: 0 0 10px 0; /* Margin below the heading */
+}
+
+.left-side p {
+    color: #222; /* Darker color for the paragraph text */
+    font-size: 18px; /* Font size for readability */
+    line-height: 1.6; /* Adjust line height for better spacing */
+    margin: 0 0 20px 0; /* Margin below the paragraph */
+}
+.button {
+    display: inline-block; /* Ensure padding and background are applied */
+    background-color:rgb(247, 18, 94); /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    height: 20px;
+    width: 175px;
+    padding: 10px 20px;
+    justify-content: center;
+    display: flex;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-align:center; /* Center align text inside button */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth background color transition and scale effect */
+    margin-top: 20px; /* Margin above the button */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+/* Change button color and scale on hover */
+.button:hover {
+    background-color: palevioletred; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 25%; /* Adjust container width for smaller screens */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .left-side h1 {
+        font-size: 20px; /* Slightly smaller font size on smaller screens */
+    }
+
+    .left-side p {
+        font-size: 14px; /* Slightly smaller font size on smaller screens */
+    }
+
+    .button {
+        font-size: 14px; /* Adjust button font size for smaller screens */
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .left-side h1 {
+        font-size: 18px; /* Further reduce font size for very small screens */
+    }
+
+    .left-side p {
+        font-size: 12px; /* Further reduce font size for very small screens */
+    }
+
+    .button {
+        font-size: 12px; /* Further reduce button font size for very small screens */
+        padding: 6px 12px; /* Further reduce button padding for very small screens */
+    }
+}
+.Right-side{
+    padding: 4rem;
+    /* max-width: 50%; */
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.right-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+img{
+    height: 31rem;
+    
+}
+.click me{
+    position: fixed;
+    margin-left: 20%;
+    
+
+
+}
+.left-side{
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+.bottom-image {
+    position: static; /* Reset position for mobile */
+    max-width: 10%; /* Ensure it fits in the mobile view */
+}
+.menu-img{
+    height: 40px;
+}
+
+.vertical{
+    display: flex;
+    gap:1rem;
+    width: 16rem;
+    flex-direction: column;
+}
+
+.vertical img{
+    object-fit: cover;
+   height: 14rem;
+}
+.horizontal img{
+    object-fit: cover;
+   height: 29rem;
+}
+.bottom-text{
+    text-wrap: wrap;
+    
+    margin: 8rem 11px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f4726f;
+}
+.bottom-text h1{
+
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 41px;
+}
+.bottom-text span{
+    padding-bottom: 7px;
+    font-size: 41px;
+}
+.bottom-text p{
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    margin: 0px;
+}
+
+.vertical-bottom{
+    gap: 1rem;
+    display: flex;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 38rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* padding: 20px; */
+    }
+    .left-side {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
+
